@@ -1,0 +1,45 @@
+# Credentials and local settings
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials.json
+secrets.json
+exakey.txt
+.codex/
+.idea/
+.vscode/
+
+# Environments, caches, and installed dependencies
+.venv/
+venv/
+.deps/
+node_modules/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+
+# Local runs, temporary files, and logs
+runs/
+outputs/
+tmp/
+*.log
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Data are excluded by default. Review each example before staging it.
+papers/*/data/*
+!papers/*/data/README.md
+!papers/*/data/example/
+!papers/*/data/example/**
+
+# Only curated reference results belong in version control.
+papers/*/results/*
+!papers/*/results/README.md
+!papers/*/results/reference/
+!papers/*/results/reference/**
